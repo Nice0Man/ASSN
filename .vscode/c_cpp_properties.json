@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "DOS16",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\WATCOM\\h\\**",
+                "/opt/watcom/h/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__WATCOMC__",
+
+                "_STREAMBUF_INCLUDED", // for fixing <iostream> missing headers
+                "_EXCEPTION_INCLUDED",
+                "_STDEXCEPT_INCLUDED",
+                "_TYPE_TRAITS_INCLUDED",
+
+                "__pop=pop", // for istream #pragma pack
+                "__push=push",
+
+                "__saveregs=" // for malloc_wrapper
+            ],
+            "forcedInclude": [".vscode/vscode-preinclude.h"],
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "windows-msvc-x86",
+
+            // "configurationProvider": "ms-vscode.cmake-tools"    // BUG: wrong header file type
+                                                                    // BUG: missing __INTELLISENSE__ defines
+            "compilerPath": "C:\\WATCOM\\binnt64\\wcl386.exe " // 
+        }
+    ],
+    "version": 4
+}

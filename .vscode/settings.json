@@ -1,0 +1,8 @@
+{ 
+     "cmake.configureArgs": [
+         "-DCMAKE_CXX_COMPILER_WORKS=1",
+         "-DCMAKE_C_COMPILER_WORKS=1"
+    ],
+    "cmake.generator": "Watcom WMake", //Comment this if you aren't using OpenWatcom compiler.
+    // "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",  // BUG: wrong header file type
+} 

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "OpenWatcom v2 Beta (16-bit DOS) {Windows}",
+        "compilers": {
+            "C": "C:\\WATCOM\\binnt64\\wcl.exe",
+            "CXX": "C:\\WATCOM\\binnt64\\wcl.exe"
+        },
+        "preferredGenerator": {
+            "name": "Watcom WMake"
+        },
+        "cmakeSettings": {
+            "CMAKE_SYSTEM_NAME":"DOS",
+            "CMAKE_SYSTEM_PROCESSOR": "I86"
+        },
+        "environmentSetupScript": "C:\\WATCOM\\owsetenv.bat"
+    },
+    {
+        "name": "OpenWatcom v2 Beta (16-bit DOS) {Linux}",
+        "compilers": {
+            "C": "/opt/watcom/binl64/wcl",
+            "CXX": "/opt/watcom/binl64/wcl"
+        },
+        "preferredGenerator": {
+            "name": "Watcom WMake"
+        },
+        "cmakeSettings": {
+            "CMAKE_SYSTEM_NAME":"DOS",
+            "CMAKE_SYSTEM_PROCESSOR": "I86"
+        },
+        "environmentSetupScript": "/opt/watcom/owsetenv.sh"
+    }
+]
