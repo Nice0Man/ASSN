@@ -139,11 +139,23 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/WATCOM/binnt64/wcl.exe"
+		},
+		{
+			"name" : "CMAKE_CXX_COMPILER_WORKS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -235,11 +247,23 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/WATCOM/binnt64/wcl.exe"
+		},
+		{
+			"name" : "CMAKE_C_COMPILER_WORKS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",

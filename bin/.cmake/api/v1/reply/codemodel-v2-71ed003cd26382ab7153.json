@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "i7188",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -41,6 +43,13 @@
 					"id" : "lab_1::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-lab_1-Debug-36268f5e8d801c3910d4.json",
 					"name" : "lab_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab_2-Debug-e68308c389ef375f9d68.json",
+					"name" : "lab_2",
 					"projectIndex" : 0
 				}
 			]

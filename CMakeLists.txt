@@ -37,8 +37,5 @@ endif()
 add_executable(lab_1 src/lab_1/main.cpp)
 target_link_libraries(lab_1 ${I7188_LIB})
 
-# add_executable(lab1 src/lab1.cpp)
-# target_link_libraries(lab1 ${I7188_LIB})
-
-# add_executable(lab2 src/lab2.cpp)
-# target_link_libraries(lab2 ${I7188_LIB})
+add_executable(lab_2 src/lab_2/main.cpp)
+target_link_libraries(lab_2 ${I7188_LIB})

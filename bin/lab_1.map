@@ -1,0 +1,378 @@
+Open Watcom Linker Version 2.0 beta Sep 19 2024 02:19:53 (64-bit)
+Copyright (c) 2002-2024 The Open Watcom Contributors. All Rights Reserved.
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       24/10/07 18:38:27
+Executable Image: lab_1.exe
+creating a DOS executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+DGROUP                          02fa:0000            00003260
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+BEGTEXT                CODE           AUTO           0000:0000       00000007
+_TEXT                  CODE           AUTO           0000:0010       00002f8d
+FAR_DATA               FAR_DATA       AUTO           02f9:000d       00000000
+_NULL                  BEGDATA        DGROUP         02fa:0000       00000020
+_AFTERNULL             BEGDATA        DGROUP         02fc:0000       00000002
+CONST                  DATA           DGROUP         02fc:0002       00000022
+CONST2                 DATA           DGROUP         02ff:0000       00000025
+_DATA                  DATA           DGROUP         0301:0006       000000b6
+XIB                    DATA           DGROUP         030c:000c       00000000
+XI                     DATA           DGROUP         030c:000c       00000012
+XIE                    DATA           DGROUP         030d:000e       00000000
+YIB                    DATA           DGROUP         030d:000e       00000000
+YI                     DATA           DGROUP         030d:000e       00000000
+YIE                    DATA           DGROUP         030d:000e       00000000
+DATA                   DATA           DGROUP         030d:000e       00000000
+_BSS                   BSS            DGROUP         030e:0000       0000291e
+STACK                  STACK          DGROUP         05a0:0000       00000800
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: CMakeFiles\lab_1.dir\src\lab_1\main.cpp.obj(C:\ASSN\src\lab_1\main.cpp)
+0000:0010*     void __near * __near malloc_wrapper( int unsigned )
+0000:0023*     void __near free_wrapper( void __near * )
+0000:0036*     _vsprintf
+0000:004d      main_
+02fa:0140+     int __near quit
+02fa:0142+     int __near LedMode
+02fa:0144+     int __near data
+02fa:0148+     long unsigned __near time
+Module: C:\WATCOM\lib286\dos\clibs.lib(stk086.asm)
+0000:0109      __STK
+0000:0120*     __STKOVERFLOW_
+Module: C:\WATCOM\lib286\dos\clibs.lib(nmalloc.c)
+0000:013b*     _nmalloc_
+0000:013b      malloc_
+02fa:0078      ___nheapbeg
+02fa:007a      ___MiniHeapRover
+02fa:007c      ___LargestSizeB4MiniHeapRover
+Module: C:\WATCOM\lib286\dos\clibs.lib(nfree.c)
+0000:01f4      _nfree_
+0000:01f4      free_
+02fa:014c+     ___MiniHeapFreeRover
+Module: C:\WATCOM\lib286\dos\clibs.lib(vsprintf.c)
+0000:02ca      vsprintf_
+Module: C:\ASSN\lib\i7188s.lib(TIMER)
+02fa:014e*     _CountDownTimer
+02fa:008c      _StopWatchMode
+02fa:016e      _StopWatchValue
+0000:0302*     _Int1CIsr
+0000:02e1*     _Int9Isr
+02fa:008a*     _UserTimer1cFunction
+02fa:0088      _UserTimerFunction
+0000:02dc*     _Utimer
+0000:03cd*     _Timer
+02fa:0084*     _OldInt1CIsr
+02fa:0080*     _OldInt09Isr
+02fa:007e*     _UseTimer
+02fa:018e*     _TimerCount
+0000:038f      _TimerClose
+0000:0320      _TimerOpen
+Module: C:\ASSN\lib\i7188s.lib(STOPWST)
+0000:041e      _StopWatchStart
+Module: C:\ASSN\lib\i7188s.lib(LEDOFF)
+0000:0456      _LedOff
+Module: C:\ASSN\lib\i7188s.lib(STOPWRD)
+0000:0462      _StopWatchReadValue
+Module: C:\ASSN\lib\i7188s.lib(LEDON)
+0000:0493      _LedOn
+Module: C:\ASSN\lib\i7188s.lib(KBHIT)
+0000:049f      _Kbhit
+Module: C:\ASSN\lib\i7188s.lib(GETCH)
+0000:04b4      _Getch
+Module: C:\ASSN\lib\i7188s.lib(PUTCH)
+0000:04bd      _Putch
+Module: C:\WATCOM\lib286\dos\clibs.lib(cstart)
+0000:0003*     ___begtext
+02fa:0000*     __nullarea
+0000:04ca      _cstart_
+0000:0674      __exit_
+0000:0691      __do_exit_with_msg_
+0000:0757      __GETDS
+Module: C:\WATCOM\lib286\dos\clibs.lib(cmodel.asm)
+0000:0762      _small_code_
+0000:0762*     CodeModelMismatch
+Module: C:\WATCOM\lib286\plbxs.lib(cppdata.cpp)
+02fa:0192      __wint_thread_data
+02fa:01a4      __compiled_under_generic
+Module: C:\WATCOM\lib286\plbxs.lib(fsroot.cpp)
+02fa:0132      ___wcpp_4_data_init_fs_root_
+Module: C:\WATCOM\lib286\dos\clibs.lib(xmsg.c)
+0000:0768*     __exit_with_msg_
+0000:076b      __fatal_runtime_error_
+Module: C:\WATCOM\lib286\dos\clibs.lib(crwdata)
+02fa:008e      __curbrk
+02fa:0096      __STACKLOW
+02fa:0098      __STACKTOP
+02fa:009a      __cbyte
+02fa:009c      __child
+02fa:009e      __no87
+02fa:00ab      ___FPE_handler
+02fa:0090      __psp
+02fa:009f      __get_ovl_stack
+02fa:00a3      __restore_ovl_stack
+02fa:00a7      __close_ovl_file
+02fa:00af      __LpCmdLine
+02fa:00b3      __LpPgmName
+02fa:0092      __osmajor
+02fa:0093      __osminor
+02fa:0094      __osmode
+02fa:0095      __HShift
+Module: C:\WATCOM\lib286\dos\clibs.lib(mem.c)
+0000:0790      __MemAllocator
+0000:0858      __MemFree
+Module: C:\WATCOM\lib286\dos\clibs.lib(nmemneed.c)
+0000:09d2      __nmemneed_
+Module: C:\WATCOM\lib286\dos\clibs.lib(grownear.c)
+0000:0a3b+     __LastFree_
+0000:0aa2      __ExpandDGROUP_
+Module: C:\WATCOM\lib286\dos\clibs.lib(prtf.c)
+0000:14ab      __prtf_
+Module: C:\ASSN\lib\i7188s.lib(DATASIZE)
+02fa:01a6*     _ComMsg
+02fa:00b8      _IntVect
+0000:16af*     _DataSizeInCom
+Module: C:\WATCOM\lib286\dos\clibs.lib(cmain086.c)
+0000:16e5      __CMain
+Module: C:\WATCOM\lib286\dos\clibs.lib(initrtns.c)
+0000:1725*     __FInitRtns
+0000:1729      __InitRtns
+0000:1780*     __FFiniRtns
+0000:1784      __FiniRtns
+Module: C:\WATCOM\lib286\dos\clibs.lib(uselfn.c)
+02fa:00bc      ___uselfn
+Module: C:\WATCOM\lib286\dos\clibs.lib(dosseg)
+0000:17e2      __DOSseg__
+Module: C:\WATCOM\lib286\dos\clibs.lib(enterdb.c)
+0000:17e3      __EnterWVIDEO_
+02fa:00be+     __WD_Present
+Module: C:\WATCOM\lib286\dos\clibs.lib(amblksiz.c)
+02fa:00c0      __amblksiz
+Module: C:\WATCOM\lib286\dos\clibs.lib(heapen.c)
+0000:17ff*     _heapenable_
+02fa:00c2      ___heap_enabled
+Module: C:\WATCOM\lib286\dos\clibs.lib(sbrk.c)
+0000:180b      __brk_
+0000:185f*     sbrk_
+Module: C:\WATCOM\lib286\dos\clibs.lib(wctomb.c)
+0000:1865      wctomb_
+Module: C:\WATCOM\lib286\dos\clibs.lib(itoa.c)
+0000:1882+     utoa_
+0000:18c7      itoa_
+Module: C:\WATCOM\lib286\dos\clibs.lib(i4m.asm)
+0000:18e2*     __I4M
+0000:18e2      __U4M
+Module: C:\WATCOM\lib286\dos\clibs.lib(noefgfmt.c)
+02fa:00c4      ___EFG_printf
+02fa:00c6*     ___EFG_scanf
+Module: C:\WATCOM\lib286\dos\clibs.lib(lltoa.c)
+0000:1907      ulltoa_
+0000:19cb*     lltoa_
+Module: C:\WATCOM\lib286\dos\clibs.lib(strupr.c)
+0000:1a1e      _strupr_
+Module: C:\WATCOM\lib286\dos\clibs.lib(ltoa.c)
+0000:1a3e      ultoa_
+0000:1a91*     ltoa_
+Module: C:\WATCOM\lib286\dos\clibs.lib(mbisdbcs.c)
+02fa:00c8      ___IsDBCS
+Module: C:\WATCOM\lib286\dos\clibs.lib(mbislead.c)
+0000:1ab1*     _ismbblead_
+02fa:0246      ___MBCSIsTable
+Module: C:\ASSN\lib\i7188s.lib(DATAS4)
+0000:1ac6      _DataSizeInCom2
+Module: C:\ASSN\lib\i7188s.lib(DATAS3)
+0000:1ad7      _DataSizeInCom1
+Module: C:\ASSN\lib\i7188s.lib(DATAS2)
+0000:1ae8      _DataSizeInCom4
+Module: C:\ASSN\lib\i7188s.lib(DATAS1)
+0000:1af9      _DataSizeInCom3
+Module: C:\WATCOM\lib286\dos\clibs.lib(___argc.c)
+02fa:0348      ____Argv
+02fa:034a      ____Argc
+Module: C:\WATCOM\lib286\dos\clibs.lib(exit.c)
+0000:1b0a+     __null_int23_exit_
+0000:1b0b      exit_
+0000:1b27*     _exit_
+02fa:00ca+     ___int23_exit
+02fa:00cc+     ___FPE_handler_exit
+Module: C:\WATCOM\lib286\dos\clibs.lib(sgdef086)
+02fa:012c      __Start_XI
+02fa:013e      __End_XI
+02fa:013e      __Start_YI
+02fa:013e      __End_YI
+Module: C:\WATCOM\lib286\dos\clibs.lib(errno.c)
+0000:1b36      __get_errno_ptr_
+02fa:034c+     _errno
+Module: C:\WATCOM\lib286\dos\clibs.lib(alphabet.c)
+02fa:0050      ___Alphabet
+Module: C:\WATCOM\lib286\dos\clibs.lib(mbinit.c)
+0000:1b97      __mbinit_
+02fa:00ce+     ___MBCodePage
+Module: C:\ASSN\lib\i7188s.lib(UART4)
+0000:1c84*     _Serial2_Isr
+02fa:00df*     _Com4InterruptCount
+02fa:00dd*     _CurCom2Dir
+02fa:00db*     _AutoCom2Dir
+02fa:00d9*     _Out_OutIdx4
+02fa:00d7*     _Out_InIdx4
+02fa:035c*     _OutData4
+02fa:075c*     __Com4Buf
+02fa:00d0*     _Com4Base
+02fa:0f5c*     _Com4Fcr
+02fa:00d6*     _err4
+02fa:00d4      _Rear4
+02fa:00d2      _Front4
+0000:1c1a*     _SetCom2FifoTriggerLevel
+0000:1bfe*     _ClearTxBuffer2
+0000:1f70*     _RestoreCom2
+0000:1df3*     _InstallCom2
+Module: C:\ASSN\lib\i7188s.lib(UART3)
+0000:204c*     _Serial1_Isr
+02fa:00f1*     _CurCom1Dir
+02fa:00ef*     _AutoCom1Dir
+02fa:00ed*     _Out_OutIdx3
+02fa:00eb*     _Out_InIdx3
+02fa:0f6c*     _OutData3
+02fa:136c*     __Com3Buf
+02fa:00e4*     _Com3Base
+02fa:1b6c*     _Com3Fcr
+02fa:00ea*     _err3
+02fa:00e8      _Rear3
+02fa:00e6      _Front3
+0000:1fe2*     _SetCom1FifoTriggerLevel
+0000:1fc6*     _ClearTxBuffer1
+0000:2328*     _RestoreCom1
+0000:21bd*     _InstallCom1
+Module: C:\ASSN\lib\i7188s.lib(COM2ISR)
+0000:238d*     _Serial4_Isr
+02fa:1b78*     _SendXoff2
+02fa:1b79*     _NeedXoff2
+02fa:1b7a*     _ReceiveXoff2
+02fa:1b7b*     _Out7188Buf2
+02fa:1d7b*     _In7188Buf2
+02fa:217b*     _err2
+02fa:217c*     _OutBeginIdx2
+02fa:217e*     _OutEndIdx2
+02fa:2180      _InEndIdx2
+02fa:2182      _InBeginIdx2
+0000:237e*     _ClearTxBuffer4
+0000:257a*     _RestoreCom4
+0000:2477*     _InstallCom4
+Module: C:\ASSN\lib\i7188s.lib(COM1ISR)
+0000:2b66*     _Serial3_Isr
+02fa:0128*     _Com3OutCount
+02fa:0124*     _Com3InCount
+02fa:0120*     _Com3IntCount
+0000:2b51*     _EnableTxIE
+0000:2b46*     _GetCtrl
+0000:2b3b*     _GetStatus
+0000:26b1*     _PushTouchData
+02fa:0114*     _TouchWaitTime
+02fa:2188*     _TouchOutNo
+02fa:218a*     _TouchOutBuf
+02fa:219e*     _szCmd1
+0000:2689*     _GetNextTouchWork
+02fa:010e*     _ShowMessage
+0000:272d*     _TouchFun
+0000:29a2*     _TouchDrv
+02fa:0108*     _CurMode
+02fa:21f4*     _MM
+02fa:0106*     _MMp
+02fa:0104*     _CurWork
+02fa:21fa*     _ToComBufnTouch
+02fa:21fc*     _ToComTouch
+02fa:21fe*     _ReadComTouch
+02fa:2200*     _IsComTouch
+02fa:0102*     _TouchPort
+02fa:0100*     _TouchOutIdx
+02fa:00fe*     _TouchInIdx
+02fa:2202*     _TouchData
+02fa:2382*     _I_TouchOutIdx
+02fa:2384*     _I_TouchInIdx
+02fa:2386*     _TouchInData
+02fa:00fc*     _DoInputData
+02fa:2446*     _ComMode
+02fa:2452      _err1
+02fa:2453*     _SendXoff1
+02fa:2454*     _NeedXoff1
+02fa:2455*     _ReceiveXoff1
+02fa:2456      _OutEndIdx1
+02fa:2458      _OutBeginIdx1
+02fa:245a      _InEndIdx1
+02fa:245c      _InBeginIdx1
+02fa:245e      _Out7188Buf1
+02fa:265e      _In7188Buf1
+0000:2705*     _ReadTouch
+0000:26f7*     _IsTouch
+0000:2643*     _ToTouch
+0000:263b*     _RestoreCom3ForTouch200
+0000:25f8*     _InstallCom3ForTouch200
+0000:25b7*     _ClearTxBuffer3
+0000:2d54*     _RestoreCom3
+0000:2c51*     _InstallCom3
+Module: C:\WATCOM\lib286\dos\clibs.lib(getltdos.c)
+0000:2d91      dos_get_dbcs_lead_table_
+Module: C:\WATCOM\lib286\dos\clibs.lib(getcpdos.c)
+0000:2dba      dos_get_code_page_
+Module: C:\ASSN\lib\i7188s.lib(BAUDDIV)
+0000:2dca      _LongDiv
+Module: C:\ASSN\lib\i7188s.lib(TOR485)
+0000:2e1f      _Set485DirToReceive
+Module: C:\ASSN\lib\i7188s.lib(TOT485)
+0000:2e4f      _Set485DirToTransmit
+Module: C:\ASSN\lib\i7188s.lib(N_SCOPY)
+0000:2e7d      N_SCOPY@
+Module: C:\ASSN\lib\i7188s.lib(USRT)
+0000:2e99      _InstallUserTimer
+Module: C:\ASSN\lib\i7188s.lib(COM1N)
+0000:2ea9      _ToCom3Bufn
+Module: C:\ASSN\lib\i7188s.lib(TOCOM1)
+0000:2ede      _ToCom3
+Module: C:\ASSN\lib\i7188s.lib(READCOM1)
+0000:2f3e      _ReadCom3
+Module: C:\ASSN\lib\i7188s.lib(ISCOM1)
+0000:2f7a      _IsCom3
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\ASSN\lib\i7188s.lib
+C:\WATCOM\lib286\plbxs.lib
+C:\WATCOM\lib286\dos\clibs.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  0800 (2048.)
+Memory size:  6200 (25088.)
+Entry point address: 0000:04ca
+Link time: 00:00.05
